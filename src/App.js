@@ -1,11 +1,13 @@
-import './App.css';
+import Home from "./components/Home/Home";
+import Navbar from "./SharedComponent/Navbar/Navbar";
+
+ 
 
 function App() {
   return (
-    <div className="App">
-      <h1 className='text-2xl'>Hello, How are you doing! </h1>
-      <button class="btn btn-primary">Button</button>
-
+    <div>
+       <Navbar></Navbar>
+       <Home></Home>
     </div>
   );
 }
