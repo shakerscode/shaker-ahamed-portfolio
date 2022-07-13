@@ -10,19 +10,24 @@ import SkillItem from '../../../../SharedComponent/SkillItem/SkillItem';
 
 const Tools = () => {
     const tools = [
-        {id: 1, tittle: 'Github', value: "90", Img: github},
-        {id: 2, tittle: 'VS Code', value: '90', Img: vsCode},
-        {id: 3, tittle: 'Chrome Dev Tools', value: '90', Img: devTool} ,
-        {id: 4, tittle: 'Heroku', value: '90', Img: heroku} ,
-        {id: 5, tittle: 'Netlify', value: '90', Img: netlify} ,
-        {id: 6, tittle: 'Photoshop', value: '90', Img: photoshop} ,
-        {id: 7, tittle: 'Figma,', value: '90', Img: figma} 
+        { id: 1, tittle: 'Github', value: "90", Img: github },
+        { id: 2, tittle: 'VS Code', value: '90', Img: vsCode },
+        { id: 3, tittle: 'Chrome Dev Tools', value: '90', Img: devTool },
+        { id: 4, tittle: 'Heroku', value: '90', Img: heroku },
+        { id: 5, tittle: 'Netlify', value: '90', Img: netlify },
+        { id: 6, tittle: 'Photoshop', value: '90', Img: photoshop },
+        { id: 7, tittle: 'Figma,', value: '90', Img: figma }
     ]
     return (
-        <div className='grid grid-cols-3 gap-5 w-[90%] mx-auto mt-10'>
-            {
-                tools.map(t => <SkillItem key={t.id} tittle={t.tittle} pic={t.Img} v={t.value}></SkillItem>)
-            }
+        <div className='custom-shadow custom-radius p-5 w-[90%] mx-auto mt-10'>
+            <div className='py-5 mb-5 custom-shadow custom-radius'>
+                <h1 className='uppercase text-center text-2xl font-semibold'> My Weapons </h1>
+            </div>
+            <div className='grid grid-cols-3 gap-5 w-[90%] mx-auto mt-10'>
+                {
+                    tools.map(t => <SkillItem key={t.id} tittle={t.tittle} pic={t.Img} v={t.value}></SkillItem>)
+                }
+            </div>
         </div>
     );
 };

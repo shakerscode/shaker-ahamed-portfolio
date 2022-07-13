@@ -15,7 +15,7 @@ const Services = () => {
         <div>
             <ComponentsHeader componentTittle={'My Services'} componentNumber={'02'}></ComponentsHeader>
             <div>
-                <div className='grid grid-cols-3 gap-6 mt-16 w-[90%] mx-auto'>
+                <div className='grid grid-cols-3 gap-6 mt-12 w-[90%] mx-auto'>
                     {
                         services.map(service => <Service key={service.id} service={service}></Service>)
                     }

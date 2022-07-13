@@ -1,5 +1,6 @@
 import React from 'react';
 import MyStory from './MyStory/MyStory';
+import Projects from './Projects/Projects';
 import Services from './Services/Services';
 import Skills from './Skills/Skills';
  import Testimonial from './Testimonial/Testimonial';
@@ -30,6 +31,7 @@ const Home = () => {
                     <MyStory></MyStory>
                     <Services></Services>
                     <Skills></Skills>
+                    <Projects></Projects>
                 </div>
             </div>
         </div>
