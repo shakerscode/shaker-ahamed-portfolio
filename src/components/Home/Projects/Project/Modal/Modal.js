@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoCloseCircleOutline } from 'react-icons/io5'
+import CustomBtn from '../../../../../SharedComponent/CustomBtn/CustomBtn';
 import UsedTech from './UsedTech/UsedTech';
 
 const Modal = ({ setModal, modal }) => {
@@ -27,12 +28,11 @@ const Modal = ({ setModal, modal }) => {
                         }
                     </div>
                     </div>
-                    <div class="modal-action">
-                        <button class="btn btn-primary text-white"><a href={liveLink}>Live Site</a></button>
-                        <button class="btn btn-primary text-white"> <a href={gitClient}>GitHub Client</a></button>
-                        <button class="btn btn-primary text-white"><a href={gitServer}>GitHub Server</a></button>
-                        <button onClick={() => setModal(false)} for="my-modal-6" class="btn btn-error text-white"> Close</button>
-
+                    <div class="grid grid-cols-2 gap-5 w-[95%] mx-auto mt-10">
+                        <CustomBtn><a href={liveLink}>Live Site</a></CustomBtn> 
+                        <CustomBtn><a href={gitClient}>GitHub Client</a></CustomBtn> 
+                        <CustomBtn><a href={gitServer}>GitHub Server</a></CustomBtn> 
+                        <button onClick={() => setModal(false)} for="my-modal-6" className='px-3 py-2 close-btn rounded-full ml-2 font-semibold '>Close</button>   
                     </div>
                 </div>
             </div>

@@ -47,3 +47,56 @@
     width: 80%;
     height: 150px; 
 }
+.close-btn{
+    background-color: rgb(237, 58, 58);
+    color: white;
+    transition: all .4s ease-in;
+}
+.close-btn:hover{
+    background: #ffff;
+    border: 2px solid rgb(237, 58, 58);
+    color: black;
+}
+
+.swiper {
+    width: 420px;
+    height: fit-content;
+  }
+  
+  .swiper-slide { 
+    border-radius: 18px; 
+    color: #fff;
+    transition: all .5s ease-in-out; 
+  }
+  
+.custom-img{
+    border-radius: 0 0 50% 50%;
+}
+ 
+.active-link{
+    background-color: rgb(19, 158, 222);
+    color: white;
+}
+
+
+@media screen and (max-width: 700px) {
+   
+    /* .nav-open{
+        display: block;
+    }  */
+    .hero-box{
+        grid-template-columns: 1fr;
+    }
+    .home-bg{
+        width: 100%;
+        /* margin-left: .8rem; */
+    }
+    .positioning{
+        margin-left: 5rem;
+    }
+    .swiper{
+        width: 230px;
+    }
+}
+
+   

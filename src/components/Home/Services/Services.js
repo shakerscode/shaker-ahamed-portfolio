@@ -12,15 +12,14 @@ const Services = () => {
         {id : 1, tittle: 'Web Developer', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat eius vitae quaerat perferendis', image: webDevelopment},
     ]
     return (
-        <div>
+        <div id='services'>
             <ComponentsHeader componentTittle={'My Services'} componentNumber={'02'}></ComponentsHeader>
-            <div>
-                <div className='grid grid-cols-3 gap-6 mt-12 w-[90%] mx-auto'>
+             
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 w-[90%] mx-auto '>
                     {
                         services.map(service => <Service key={service.id} service={service}></Service>)
                     }
-                </div>
-            </div>
+                </div> 
         </div>
     );
 };

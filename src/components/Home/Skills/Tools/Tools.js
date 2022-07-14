@@ -21,7 +21,7 @@ const Tools = () => {
     return (
         <div className='custom-shadow custom-radius p-5 w-[90%] mx-auto mt-10'>
             <div className='py-5 mb-5 custom-shadow custom-radius'>
-                <h1 className='uppercase text-center text-2xl font-semibold'> My Weapons </h1>
+                <h1 className=' text-center text-2xl font-semibold'> My Weapons </h1>
             </div>
             <div className='grid grid-cols-3 gap-5 w-[90%] mx-auto mt-10'>
                 {

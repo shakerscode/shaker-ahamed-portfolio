@@ -43,11 +43,14 @@ const Skills = () => {
         {id: 4, handleClick: handleTools, tittle: 'Tools' },
     ]
     return (
-        <div className='mt-12'>
+        <div className='mt-12' id='skills'>
             <ComponentsHeader componentTittle={'Skills'} componentNumber={'03'}></ComponentsHeader>
             <div className='flex flex-wrap justify-center items-center my-5'>
                 {
-                    handlingSkills.map(hs=> <SkillMenu key={hs.id} skill={hs}></SkillMenu>)
+                    handlingSkills.map(hs=> 
+                    <SkillMenu 
+                    key={hs.id} 
+                    skill={hs} ></SkillMenu>)
                 }
             </div>
             <div>

@@ -27,10 +27,10 @@ const Expertise = () => {
     return (
         <div className='custom-shadow custom-radius p-5 w-[90%] mx-auto mt-10'> 
         <div className='py-5 mb-5 custom-shadow custom-radius'>
-        <h1 className='uppercase text-center text-2xl font-semibold'>My expertise</h1>
+        <h1 className=' text-center text-2xl font-semibold'>My Expertise</h1>
         </div>
 
-            <div className='grid grid-cols-4 gap-5 mt-7'>
+            <div className='grid grid-cols-3 md:grid-cols-4 gap-5 mt-7'>
                 {
                     expertise.map(ex => <SkillItem key={ex.id} tittle={ex.tittle} pic={ex.exImg} v={ex.value}></SkillItem>)
                 }
