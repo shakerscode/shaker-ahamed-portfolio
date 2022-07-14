@@ -83,7 +83,7 @@ const Projects = () => {
     return (
         <div className='mt-12' id='projects'>
             <ComponentsHeader componentTittle={'Projects'} componentNumber={'04'}></ComponentsHeader>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-5 w-[90%] md:mx-auto mt-12'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-5 md:w-[90%] md:mx-auto mt-12'>
                 {
                     projects.map(p => <Project key={p.id} project={p} handleModal={handleModal}></Project>)
                 }

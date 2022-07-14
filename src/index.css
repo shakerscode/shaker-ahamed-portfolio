@@ -95,7 +95,8 @@
         margin-left: 5rem;
     }
     .swiper{
-        width: 230px;
+        width: 250px;
+        margin: 4rem auto;
     }
 }
 
