@@ -7,9 +7,9 @@ import Service from '../../../SharedComponent/Service/Service';
 
 const Services = () => {
     const services = [
-        {id : 1, tittle: 'Front-end Web Developer', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat eius vitae quaerat perferendis', image: frontEnd },
-        {id : 1, tittle: 'MERN Stack Web Developer', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat eius vitae quaerat perferendis', image: MERN},
-        {id : 1, tittle: 'Web Developer', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat eius vitae quaerat perferendis', image: webDevelopment},
+        {id : 1, tittle: 'Front-end Web Developer', desc: 'I like to code things from scratch, and enjoy bringing ideas to life in the browser.', image: frontEnd },
+        {id : 1, tittle: 'MERN Stack Web Developer', desc: 'A perfect website where user can do anything with few easy steps or a website which need to manage data is easily possible with MERN technology.,', image: MERN},
+        {id : 1, tittle: 'Web Developer', desc: 'My approach to website development is to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience.', image: webDevelopment},
     ]
     return (
         <div id='services'>

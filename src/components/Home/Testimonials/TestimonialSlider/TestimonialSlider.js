@@ -32,7 +32,7 @@ const TestimonialSlider = () => {
             >
                 {
                     clientTestimonial.map(ct =>
-                        <SwiperSlide className='bg-white custom-shadow '>
+                        <SwiperSlide className='bg-white custom-shadow'>
                             <div className='flex justify-center items-center'>
                                 <img className='custom-img shadow w-full' src={ct.clientImg} alt="" />
                             </div>
