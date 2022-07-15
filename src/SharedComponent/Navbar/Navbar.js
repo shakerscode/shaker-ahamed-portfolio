@@ -6,13 +6,11 @@ import {TiDeleteOutline } from 'react-icons/ti';
 const Navbar = () => {
     const [open, setOpen] = useState(false)
     console.log(open);
-    const handleOpen = () =>{
-        setOpen(!open)
-    }
+    
     return (
-        <div className='flex justify-between items-center md:px-12 px-5 py-4  h-20 rounded-xl w-[98%] mx-auto custom-shadow z-50 sticky top-0 w-sticky bg-white'>
+        <div className='flex justify-between items-center md:px-12 px-5 py-4  h-20 rounded-xl navManu w-[98%] mx-auto custom-shadow z-50 sticky top-0 w-sticky bg-white'>
             <div>
-                <h1 className='text-xl md:text-3xl font-bold'>Shaker <span className='text-primary'>A.</span></h1>
+                <h1 className='text-2xl md:text-3xl font-bold'>Shaker <span className='text-primary'>A.</span></h1>
             </div>
             {
                 open && <nav className='p-12 block md:hidden bg-white absolute left-0 top-0 right-0'>
@@ -20,14 +18,14 @@ const Navbar = () => {
                         <TiDeleteOutline onClick={() => setOpen(false)}  className='text-5xl'></TiDeleteOutline>
                     </div>
                     <ul className='  text-center  text-md font-semibold '>
-                        <li className='ml-7 py-2'><a href='/'>Home</a></li>
-                        <li className='ml-7 py-2'><a href='#about'>About</a></li>
-                        <li className='ml-7 py-2'><a href='#services'>Services</a></li>
-                        <li className='ml-7 py-2'><a href='#skills'>Skills</a></li>
-                        <li className='ml-7 py-2'><a href='#projects'>Projects</a></li>
-                        <li className='ml-7 py-2'><a href='#contact'>Contact Me</a></li>
+                        <li onClick={() => setOpen(false)} className='ml-7 py-2'><a href='/'>Home</a></li>
+                        <li onClick={() => setOpen(false)} className='ml-7 py-2'><a href='#about'>About</a></li>
+                        <li onClick={() => setOpen(false)} className='ml-7 py-2'><a href='#services'>Services</a></li>
+                        <li onClick={() => setOpen(false)} className='ml-7 py-2'><a href='#skills'>Skills</a></li>
+                        <li onClick={() => setOpen(false)} className='ml-7 py-2'><a href='#projects'>Projects</a></li>
+                        <li onClick={() => setOpen(false)} className='ml-7 py-2'><a href='#contact'>Contact Me</a></li>
                     </ul>
-                    <label data-toggle-theme="light, dark" class=" swap swap-rotate ml-[9rem]">
+                    <label onClick={() => setOpen(false)} data-toggle-theme="light, dark" class=" swap swap-rotate ml-[9rem]">
 
                     <input type="checkbox" />
 
@@ -39,7 +37,7 @@ const Navbar = () => {
 
                 </label>
                 <a className=' md:ml-0' href="#contact">
-                    <button className='flex justify-around items-center bg-primary text-white ml-[6rem] mt-2 px-4 py-2 text-sm  rounded-full font-semibold hover:border-2 hover:border-primary hover:bg-white hover:text-black transition-all duration-1000 ease-in-out '>Contact Me<IoSend className='md:ml-3 ml-2'></IoSend>
+                    <button onClick={() => setOpen(false)} className='flex justify-around items-center bg-primary text-white ml-[6rem] mt-2 px-4 py-2 text-sm  rounded-full font-semibold hover:border-2 hover:border-primary hover:bg-white hover:text-black transition-all duration-1000 ease-in-out '>Contact Me<IoSend className='md:ml-3 ml-2'></IoSend>
                     </button>
                 </a>
                 </nav>

@@ -41,7 +41,8 @@ const ContactMe = () => {
                     <p><span className='font-semibold'>Instagram:</span> @shakerahamedtasfi</p>
                 </div>
             </div>
-            <div className='bg-white custom-shadow w-[80%] mx-auto mt-14 custom-radius'>
+            <div className='bg-white custom-shadow md:w-[80%] mx-auto mt-14 custom-radius'>
+                <h1 className='md:text-3xl text-xl text-center font-bold text-primary pt-5'>Knock Me!</h1>
                 <form className='flex flex-col justify-center items-center md:p-10 p-5' onSubmit={sendEmail}>
                     <input type="text" placeholder="Name" name='name' className="w-full outline-none h-14 my-3 custom-radius pl-5 text-gray-500 bg-gray-100" />
                     <input required type="email" placeholder="Email" name='user_email' className="w-full outline-none h-14 my-3 custom-radius pl-5 text-gray-500 bg-gray-100" />

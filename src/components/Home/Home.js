@@ -26,7 +26,7 @@ const Home = () => {
                    <div className='custom-shadow custom-radius w-[80%] h-[400px] md:mx-auto md:mt-12 mt-5 home-bg'>
                    <UserMain></UserMain>
                    </div>
-                    <div className='grid grid-cols-1 md:grid-cols-3 md:gap-10 gap-5 w-[70%] md:h-[300px]  md:mt-[-8rem] mt-[-5rem] mx-auto justify-center positioning items-center'>
+                    <div className='grid grid-cols-1 md:grid-cols-3 md:gap-10 gap-5 md:w-[70%] md:h-[300px] w-[80%] max-h-full  md:mt-[-8rem] mt-[-5rem] mx-auto   '>
                         {
                             testimonial.map(t=> <Testimonial key={t.id} t={t}></Testimonial>)
                         }

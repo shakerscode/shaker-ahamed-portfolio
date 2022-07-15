@@ -6,7 +6,7 @@ const Testimonials = () => {
     return (
         <div className='mt-12'>
             <ComponentsHeader componentTittle={'Testimonials'} componentNumber={'05'}></ComponentsHeader>
-            <div className=''>
+            <div className='w-full'>
                 <TestimonialSlider></TestimonialSlider>
             </div>
         </div>

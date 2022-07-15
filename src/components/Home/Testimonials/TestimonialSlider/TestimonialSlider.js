@@ -19,7 +19,7 @@ import clientThree from '../../../../assets/images/clients/client-3.png'
 const TestimonialSlider = () => {
     const clientTestimonial = [
         { id: 1, name: 'Tony Stark', company: "CEO, SAT Tech", review: "A men with honesty and very much passionate with his job. He don't compromise anything with his work. His work is so impassive. Recommended him for everyone.", clientImg: clientOne },
-        { id: 2, name: 'Michael Jackson', company: "Sr Eng., Nuclear IT Solution", review: "It was my first time working with him. He did the job as expected and on time. He also charged reasonably. Great attitude too. I highly recommend him. Thanks a lot Atif. Will be back soon with more projects. Take Care !", clientImg: clientTwo },
+        { id: 2, name: 'Michael Jackson', company: "Sr Eng. Nuclear IT Solution", review: "It was my first time working with him. He did the job as expected and on time. He also charged reasonably. Great attitude too. I highly recommend him. Thanks a lot Shaker. Will be back soon with more projects. Take Care!", clientImg: clientTwo },
         { id: 3, name: 'Chris Hemsworth', company: "CEO, Galaxy Software", review: "Shaker, is an excellent frontend dev. He's the ability to understand all of your requirements and deliver a perfect code. Communication was good too.", clientImg: clientThree },
     ]
     return (
@@ -28,7 +28,7 @@ const TestimonialSlider = () => {
                 effect={"cards"}
                 grabCursor={true}
                 modules={[EffectCards]}
-                className="mySwiper mt-20 mb-4"
+                className="mySwiper mt-20 mb-4 "
             >
                 {
                     clientTestimonial.map(ct =>
@@ -49,7 +49,7 @@ const TestimonialSlider = () => {
                                     <AiFillStar></AiFillStar>
                                     <AiFillStar></AiFillStar>
                                 </div>
-                                <p className='text-gray-700 text-justify mt-5'>{ct.review}</p>
+                                <p className='text-gray-700 text-justify leading-6 tracking-tight py-5 md:py-0 text-sm md:text-md md:mt-5'>{ct.review}</p>
                             </div>
                         </SwiperSlide>)
                 }

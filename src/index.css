@@ -25,7 +25,7 @@
 
 .my-profile{
     width: 350px;
-    height: 550px;
+    
     background-color: aliceblue;
     border-radius: 10px; 
     position: sticky;
@@ -81,23 +81,29 @@
 
 @media screen and (max-width: 700px) {
    
-    /* .nav-open{
-        display: block;
-    }  */
     .hero-box{
         grid-template-columns: 1fr;
+       
     }
     .home-bg{
         width: 100%;
-        /* margin-left: .8rem; */
     }
     .positioning{
-        margin-left: 5rem;
+        width: 100%;
+        
     }
     .swiper{
-        width: 250px;
+        width: 210px;
+        height: 650px;
         margin: 4rem auto;
     }
+    .my-profile{
+        width: 100%;
+    }
+    .navManu{
+        width: 100%;
+    }
+   
 }
 
    

@@ -11,7 +11,7 @@ const UserInfo = () => {
         <div className='my-profile'>
             <div className='flex justify-center items-center p-10'>
                 <div class="avatar online ">
-                    <div class="w-28 rounded-full">
+                    <div class="w-32 rounded-full">
                         <img src="https://i.ibb.co/7CFJ3K0/IMG-20220529-201025.jpg" alt='pic' />
                     </div>
                 </div>
@@ -20,7 +20,7 @@ const UserInfo = () => {
             <h2 className='text-2xl font-bold'>Shaker Ahamed</h2>
                 <Typewriter
                     options={{
-                        strings: ['I`m Dreamer', 'I`m Web Developer', 'I`m Front-end Web Developer', 'I`m MERN Stack Developer'],
+                        strings: ['I`m Dreamer', 'I`m a Web Developer', 'I`m a Front-end Web Developer', 'I`m a MERN Stack Developer'],
                         autoStart: true,
                         loop: true,
                     }}
@@ -32,7 +32,7 @@ const UserInfo = () => {
                 <a target={'blank'} href="https://github.com/shakerscode"><FaGithub className='ml-5 h-20 w-5 hover:text-primary'></FaGithub></a>
                 <a target={'blank'} href="https://twitter.com/ShakerAhamed7"><FaTwitter className='ml-5 h-20 w-5 hover:text-primary'></FaTwitter></a>
             </div>
-            <div className='flex justify-between items-center px-4'>
+            <div className='flex justify-between items-center px-4 py-7'>
                 <div className='text-sm font-semibold'>
                     <h4>Residence:</h4>
                     <p>City:</p>
