@@ -70,7 +70,7 @@ const Projects = () => {
             ], 
             gitClient:' https://github.com/shakerscode/expansion-mart-e-commerce', 
             gitServer: 'https://github.com/shakerscode/expansion-mart-e-commerce', 
-            liveLink: 'https://find-tutor-e9b12.web.app/',
+            liveLink: 'https://expansionmart.netlify.app/',
         },
         {
             id: 4, 
@@ -87,7 +87,7 @@ const Projects = () => {
             ], 
             gitClient:' https://github.com/shakerscode/e-blog-client', 
             gitServer: 'https://github.com/shakerscode/expansion-mart-e-commerce', 
-            liveLink: 'https://github.com/shakerscode/e-blog-client',
+            liveLink: 'https://expention-mart-blog.netlify.app/',
         },
         {
             id: 5, 
