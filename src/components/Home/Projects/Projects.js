@@ -3,7 +3,9 @@ import ComponentsHeader from '../../../SharedComponent/ComponentsHeader/Componen
 import Project from './Project/Project';
 import imageOne from '../../../assets/images/Projects/torq-bicycle.png';
 import imageTwo from '../../../assets/images/Projects/find-tutor-home.png';
-import imageThree from '../../../assets/images/Projects/fruit-fest.png';
+import imageThree from '../../../assets/images/Projects/imageThree.png';
+import imageFour from '../../../assets/images/Projects/ExpentionMartBlog.png';
+import imageFive from '../../../assets/images/Projects/fruit-fest.png';
 import Modal from './Project/Modal/Modal';
 
 const Projects = () => {
@@ -49,15 +51,49 @@ const Projects = () => {
                 {techTen: 'AOS Animation'},
                 {techEleven: 'Heroku'},
             ], 
-            gitClient:' https://github.com/shakerscode/torq-bicycle-client-site', 
-            gitServer: 'https://github.com/shakerscode/torq-bicycle-server', 
-            liveLink: 'https://torq-bicycle.web.app/',
+            gitClient:' https://github.com/shakerscode/find-tutor-website', 
+            gitServer: 'https://github.com/shakerscode', 
+            liveLink: 'https://find-tutor-e9b12.web.app/',
         },
         {
             id: 3, 
+            tittle: 'ExpansionMart', 
+            desc: 'ExpansionMart is an e-commerce website that will help you to buy products. This website is still under construction. I am building is by myself.', 
+            Image: imageThree,
+            keyPart: 'A pure design and functionality made with react and tailwind css',
+            usedTech: [
+                {techTwo: 'Javascript'}, 
+                {techFour: 'HTML'},
+                {techFive: 'Tailwind CSS'}, 
+                {techSeven: 'Firebase'},
+                {techNine: 'Toastify'},  
+            ], 
+            gitClient:' https://github.com/shakerscode/expansion-mart-e-commerce', 
+            gitServer: 'https://github.com/shakerscode/expansion-mart-e-commerce', 
+            liveLink: 'https://find-tutor-e9b12.web.app/',
+        },
+        {
+            id: 4, 
+            tittle: 'ExpansionMart Blog', 
+            desc: 'ExpansionMart Blog is an e-commerce health related blog website that will help you to get knowledge about healthy food. This website is still under construction. I am building is by myself.', 
+            Image: imageFour,
+            keyPart: 'A pure design and functionality made with react and tailwind css',
+            usedTech: [
+                {techTwo: 'Javascript'}, 
+                {techFour: 'HTML'},
+                {techFive: 'Tailwind CSS'}, 
+                {techSeven: 'Firebase'},
+                {techNine: 'Toastify'},  
+            ], 
+            gitClient:' https://github.com/shakerscode/e-blog-client', 
+            gitServer: 'https://github.com/shakerscode/expansion-mart-e-commerce', 
+            liveLink: 'https://github.com/shakerscode/e-blog-client',
+        },
+        {
+            id: 5, 
             tittle: 'Fruit Fest', 
             desc: 'Fruit Fest is a web warehouse website that contains different kinds of fruits. They stock and restock their fruits and are able to deliver them.', 
-            Image: imageThree,
+            Image: imageFive,
             keyPart: 'An admin can deliver and restock their products. Admin can manage, and be able to delete a product. Admin can add a new item in their inventory. Users can log in/sign in here. Log in/ sign in system implemented with firebase authentication system.',
             usedTech: [
                 {techOne: 'MERN technology'},
@@ -71,9 +107,9 @@ const Projects = () => {
                 {techTen: 'AOS Animation'},
                 {techEleven: 'Heroku'},
             ], 
-            gitClient:' https://github.com/shakerscode/torq-bicycle-client-site', 
-            gitServer: 'https://github.com/shakerscode/torq-bicycle-server', 
-            liveLink: 'https://torq-bicycle.web.app/',
+            gitClient:' https://github.com/shakerscode/fruit-fest-web-app', 
+            gitServer: 'https://github.com/shakerscode/fruit-fest-web-app-server-site', 
+            liveLink: 'https://fruit-fest.web.app/',
         }
     ]
 
@@ -82,7 +118,7 @@ const Projects = () => {
     }
     return (
         <div className='mt-12' id='projects'>
-            <ComponentsHeader componentTittle={'Projects'} componentNumber={'04'}></ComponentsHeader>
+            <ComponentsHeader componentTittle={'Best Projects'} componentNumber={'04'}></ComponentsHeader>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-5 md:w-[90%] w-full mx-auto mt-12'>
                 {
                     projects.map(p => <Project key={p.id} project={p} handleModal={handleModal}></Project>)
